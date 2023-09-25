@@ -1,0 +1,26 @@
+name: Build and Test
+
+on:
+  pull_request:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+env:
+  CI: true
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - uses: oven-sh/setup-bun@v1
+
+    - name: Build
+      run: bun i && bun run build
