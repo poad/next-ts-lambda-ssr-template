@@ -32,7 +32,10 @@ export class CdkStack extends cdk.Stack {
       memorySize: 256,
       timeout: cdk.Duration.seconds(30),
     });
-    const url = handler.addFunctionUrl();
+
+    const url = handler.addFunctionUrl({
+      authType: lambda.FunctionUrlAuthType.NONE,
+    });
 
     // // Amazon API Gateway HTTP APIの定義
     // new apigatewayv2.HttpApi(this, 'Api', {
