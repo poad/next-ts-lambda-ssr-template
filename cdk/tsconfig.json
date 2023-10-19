@@ -21,9 +21,11 @@
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
     "typeRoots": [
+      "./node_modules",
       "./node_modules/@types"
     ],
     "types": [
+      "node",
       "vitest/globals"
     ]
   },

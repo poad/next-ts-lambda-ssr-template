@@ -9,30 +9,30 @@
     "watch": "tsc -w",
     "test": "vitest --run",
     "cdk": "cdk",
-    "eslint-check": "eslint --ext .ts,.js,.tsx,.jsx bin lib",
-    "eslint-fix": "eslint --fix --ext .ts,.js,.tsx,.jsx bin lib",
+    "eslint-check": "eslint --ext .ts bin lib",
+    "eslint-fix": "eslint --fix --ext .ts bin lib",
     "prettier-check": "prettier --check bin lib",
     "prettier-format": "prettier --write bin lib",
     "lint": "bun prettier-check && bun eslint-check",
     "lint-fix": "bun prettier-format && bun eslint-fix"
   },
   "devDependencies": {
-    "@types/node": "^20.7.0",
-    "@typescript-eslint/eslint-plugin": "^6.7.3",
-    "@typescript-eslint/parser": "^6.7.3",
-    "aws-cdk": "^2.98.0",
-    "eslint": "^8.50.0",
+    "@types/node": "^20.8.7",
+    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "@typescript-eslint/parser": "^6.8.0",
+    "aws-cdk": "^2.102.0",
+    "eslint": "^8.51.0",
     "prettier": "^3.0.3",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2",
-    "vite": "^4.4.9",
-    "vitest": "^0.34.5"
+    "vite": "^4.5.0",
+    "vitest": "^0.34.6"
   },
   "dependencies": {
     "@aws-cdk/aws-apigatewayv2-alpha": "2.98.0-alpha.0",
     "@aws-cdk/aws-apigatewayv2-integrations-alpha": "2.98.0-alpha.0",
-    "aws-cdk-lib": "^2.98.0",
-    "constructs": "^10.2.70",
+    "aws-cdk-lib": "^2.102.0",
+    "constructs": "^10.3.0",
     "source-map-support": "^0.5.21"
   }
 }
