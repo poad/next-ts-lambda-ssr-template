@@ -14,7 +14,7 @@ if [ $result -ne 0 ]; then
 fi
 echo ""
 pwd
-pnpm install && pnpm up && pnpm lint-fix && pnpm build
+pnpm up && rm -rf pnpm-lock.yaml && bun install && bun update && bun lint-fix && bun run build
 result=$?
 if [ $result -ne 0 ]; then
   cd "${CUR}"
@@ -30,7 +30,7 @@ if [ $result -ne 0 ]; then
 fi
 echo ""
 pwd
-pnpm install && pnpm up && pnpm lint-fix && pnpm build
+pnpm up && rm -rf pnpm-lock.yaml && bun install && bun update && bun lint-fix
 result=$?
 if [ $result -ne 0 ]; then
   cd "${CUR}"
