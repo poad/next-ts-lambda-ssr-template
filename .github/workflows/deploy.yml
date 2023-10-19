@@ -28,15 +28,21 @@ jobs:
 
     - uses: actions/checkout@v4
 
+
+    - uses: oven-sh/setup-bun@v1
+    
+    - name: Build (app)
+      working-directory: app
+      run: bun i && bun run build
+
     - uses: pnpm/action-setup@v2
       name: Install pnpm
       id: pnpm-install
       with:
         version: latest
         run_install: |
+          - cwd: cdk
           - args: [--global, aws-cdk]
-
-    - uses: oven-sh/setup-bun@v1
 
     - name: deploy (cdk)
       working-directory: cdk

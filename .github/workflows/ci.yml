@@ -22,5 +22,6 @@ jobs:
 
     - uses: oven-sh/setup-bun@v1
 
-    - name: Build
+    - name: Build (app)
+      working-directory: app
       run: bun i && bun run build
