@@ -41,7 +41,9 @@ jobs:
       with:
         version: latest
         run_install: |
-          - cwd: cdk
+          - recursive: true
+            cwd: cdk
+            args: [--no-frozen-lockfile]
           - args: [--global, aws-cdk]
 
     - name: deploy (cdk)
