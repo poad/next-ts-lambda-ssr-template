@@ -4,6 +4,7 @@
   "bin": {
     "cdk": "bin/cdk.js"
   },
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
@@ -29,8 +30,8 @@
     "vitest": "^0.34.6"
   },
   "dependencies": {
-    "@aws-cdk/aws-apigatewayv2-alpha": "2.98.0-alpha.0",
-    "@aws-cdk/aws-apigatewayv2-integrations-alpha": "2.98.0-alpha.0",
+    "@aws-cdk/aws-apigatewayv2-alpha": "2.110.1-alpha.0",
+    "@aws-cdk/aws-apigatewayv2-integrations-alpha": "2.110.1-alpha.0",
     "aws-cdk-lib": "^2.110.1",
     "constructs": "^10.3.0",
     "source-map-support": "^0.5.21"
