@@ -1,5 +1,5 @@
 {
-  "app": "bunx ts-node --prefer-ts-exts bin/cdk.ts",
+  "app": "pnpx ts-node --prefer-ts-exts bin/cdk.ts",
   "watch": {
     "include": [
       "**"
