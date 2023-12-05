@@ -14,11 +14,11 @@
     "lint-fix": "bun prettier-format && bun eslint-fix"
   },
   "dependencies": {
-    "@types/node": "^20.10.2",
-    "@types/react": "^18.2.41",
+    "@types/node": "^20.10.3",
+    "@types/react": "^18.2.42",
     "@types/react-dom": "^18.2.17",
-    "@typescript-eslint/eslint-plugin": "^6.13.1",
-    "@typescript-eslint/parser": "^6.13.1",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
     "config-prettier": "^0.2.0",
     "eslint": "^8.55.0",
     "eslint-config-next": "^14.0.3",
