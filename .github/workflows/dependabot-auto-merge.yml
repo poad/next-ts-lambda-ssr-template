@@ -4,8 +4,18 @@ on:
   pull_request_target:
 
 permissions:
+  actions: read
+  checks: write
+  contents: write
+  deployments: none
   id-token: write
-  contents: read
+  issues: none
+  packages: none
+  pull-requests: write
+  repository-projects: read
+  security-events: write
+  statuses: write
+
 
 jobs:
   auto-merge:
@@ -20,14 +30,3 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           config: .github/dependabot-auto-merge.yml
-
-      - name: Slack Notification (not success)
-        uses: lazy-actions/slatify@master
-        if: ${{ ! success() }}
-        continue-on-error: true
-        with:
-          job_name: '*auto-merge*'
-          type: ${{ job.status }}
-          icon_emoji: ":octocat:"
-          url: ${{ secrets.SLACK_WEBHOOK }}
-          token: ${{ secrets.GITHUB_TOKEN }}
