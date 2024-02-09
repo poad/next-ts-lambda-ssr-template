@@ -35,7 +35,7 @@ jobs:
       working-directory: app
       run: bun i && bun run build
 
-    - uses: pnpm/action-setup@v2
+    - uses: pnpm/action-setup@v3
       name: Install pnpm
       id: pnpm-install
       with:
