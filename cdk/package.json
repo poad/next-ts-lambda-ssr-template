@@ -16,10 +16,10 @@
     "lint-fix": "bun prettier-format && bun eslint-fix"
   },
   "devDependencies": {
-    "@types/node": "^20.12.6",
+    "@types/node": "^20.12.7",
     "@typescript-eslint/eslint-plugin": "^7.6.0",
     "@typescript-eslint/parser": "^7.6.0",
-    "aws-cdk": "^2.136.0",
+    "aws-cdk": "^2.136.1",
     "esbuild": "^0.20.2",
     "eslint": "^9.0.0",
     "prettier": "^3.2.5",
@@ -27,7 +27,7 @@
     "typescript": "^5.4.4"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.136.0",
+    "aws-cdk-lib": "^2.136.1",
     "constructs": "^10.3.0",
     "source-map-support": "^0.5.21"
   }
