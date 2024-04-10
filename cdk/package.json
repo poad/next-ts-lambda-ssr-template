@@ -16,7 +16,7 @@
     "lint-fix": "bun prettier-format && bun eslint-fix"
   },
   "devDependencies": {
-    "@types/node": "^20.12.6",
+    "@types/node": "^20.12.7",
     "@typescript-eslint/eslint-plugin": "^7.6.0",
     "@typescript-eslint/parser": "^7.6.0",
     "aws-cdk": "^2.136.0",
