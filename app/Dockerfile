@@ -11,7 +11,7 @@ RUN bun run build
 FROM amazon/aws-lambda-nodejs:18
 
 # Lambda Web Adapterのインストール
-COPY --from=public.ecr.aws/awsguru/aws-lambda-adapter:0.7.1 /lambda-adapter /opt/extensions/lambda-adapter
+COPY --from=public.ecr.aws/awsguru/aws-lambda-adapter:0.8.3 /lambda-adapter /opt/extensions/lambda-adapter
 ENV PORT=3000
 
 COPY --from=builder /build/next.config.js ./
