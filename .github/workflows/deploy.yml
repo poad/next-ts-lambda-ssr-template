@@ -44,4 +44,5 @@ jobs:
       working-directory: cdk
       run: |
         bun i
+        npm -g i aws-cdk
         cdk deploy
