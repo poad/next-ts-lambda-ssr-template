@@ -14,7 +14,7 @@ if [ $result -ne 0 ]; then
 fi
 echo ""
 pwd
-corepack use pnpm@latest && pnpm up && rm -rf pnpm-lock.yaml && bun install && bun update && bun lint-fix && bun run build
+corepack use pnpm@latest && pnpm up && rm -rf pnpm-lock.yaml && pnpm install && pnpm update && pnpm lint-fix && pnpm build
 result=$?
 if [ $result -ne 0 ]; then
   cd "${CUR}"

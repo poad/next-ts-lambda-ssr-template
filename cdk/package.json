@@ -4,25 +4,22 @@
   "bin": {
     "cdk": "bin/cdk.js"
   },
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
     "cdk": "cdk",
-    "eslint-check": "eslint './{bin,lib}/**/*.ts'",
-    "eslint-fix": "eslint --fix './{bin,lib}/**/*.ts'",
-    "prettier-check": "prettier --check bin lib",
-    "prettier-format": "prettier --write bin lib",
-    "lint": "bun prettier-check && bun eslint-check",
-    "lint-fix": "bun prettier-format && bun eslint-fix"
+    "prettier:fix": "prettier --write './{bin,lib}/**/*.ts'",
+    "prettier:check": "prettier --check './{bin,lib}/**/*.ts'",
+    "eslint:fix": "eslint --fix './{bin,lib}/**/*.ts'",
+    "eslint:check": "eslint './{bin,lib}/**/*.ts'",
+    "lint": "pnpm --parallel run /^.+:check$/",
+    "lint-fix": "pnpm run /^.+:fix$/"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",
-    "@typescript-eslint/eslint-plugin": "^7.9.0",
-    "@typescript-eslint/parser": "^7.9.0",
     "aws-cdk": "^2.142.0",
     "esbuild": "^0.21.3",
-    "eslint": "^9.2.0",
-    "prettier": "^3.2.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
   },
