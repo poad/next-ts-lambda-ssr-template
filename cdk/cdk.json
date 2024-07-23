@@ -1,5 +1,5 @@
 {
-  "app": "npx node --loader ts-node/esm bin/cdk.ts",
+  "app": "npx tsx bin/cdk.ts",
   "watch": {
     "include": [
       "**"
