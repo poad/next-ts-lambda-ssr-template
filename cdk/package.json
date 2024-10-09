@@ -9,19 +9,15 @@
     "build": "tsc",
     "watch": "tsc -w",
     "cdk": "cdk",
-    "prettier:fix": "prettier --write './{bin,lib}/**/*.ts'",
-    "prettier:check": "prettier --check './{bin,lib}/**/*.ts'",
-    "eslint:fix": "eslint --fix './{bin,lib}/**/*.ts'",
-    "eslint:check": "eslint './{bin,lib}/**/*.ts'",
-    "lint": "pnpm --parallel run /^.+:check$/",
-    "lint-fix": "pnpm run /^.+:fix$/"
+    "lint-fix": "eslint --fix './{bin,lib}/**/*.ts'",
+    "lint": "eslint './{bin,lib}/**/*.ts'"
   },
   "devDependencies": {
     "@types/node": "^22.7.5",
     "aws-cdk": "^2.161.1",
     "esbuild": "^0.24.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.6.2"
+    "typescript": "^5.6.3"
   },
   "dependencies": {
     "aws-cdk-lib": "^2.161.1",
