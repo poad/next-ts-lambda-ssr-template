@@ -1,10 +1,11 @@
 import styles from '../../page.module.css';
 
-export default function Index({
-  params: { slug },
+export default async function Index({
+  params,
 }: {
-  params: { slug: string };
-}): JSX.Element {
+  params: Promise<{ slug: string }>;
+}): Promise<JSX.Element> {
+  const slug = (await params).slug;
   return (
     <main className={styles.main}>
       <a href="/">HOME</a>
