@@ -11,7 +11,7 @@
     "lint-fix": "eslint --fix src"
   },
   "dependencies": {
-    "@types/node": "^22.10.5",
+    "@types/node": "^22.10.6",
     "@types/react": "^19.0.6",
     "@types/react-dom": "^19.0.3",
     "eslint": "~9.18.0",
