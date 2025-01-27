@@ -2,45 +2,38 @@
 
 CUR=$(pwd)
 
-CURRENT=$(cd $(dirname $0);pwd)
+CURRENT=$(cd "$(dirname "$0")" || exit;pwd)
 echo "${CURRENT}"
 
-cd "${CURRENT}/app"
-git pull --prune
+cd "${CURRENT}" || exit
+if ! git pull --prune; then
+  cd "${CUR}" || exit
+  exit $result
+fi
+
+cd "${CURRENT}" || exit
 result=$?
 if [ $result -ne 0 ]; then
-  cd "${CUR}"
+  cd "${CUR}" || exit
   exit $result
 fi
 echo ""
 pwd
-corepack use pnpm@latest && pnpm up -r && rm -rf pnpm-lock.yaml && pnpm install && pnpm update -r && pnpm lint-fix && pnpm build
+if ! (pnpm install -r && pnpm up -r && pnpm -r --parallel --if-present lint-fix) ; then
+  cd "${CUR}" || exit
+  exit 1
+fi
+
+cd "${CURRENT}" || exit
 result=$?
 if [ $result -ne 0 ]; then
-  cd "${CUR}"
+  cd "${CUR}" || exit
   exit $result
 fi
 
-cd "${CURRENT}/cdk"
-git pull --prune
-result=$?
-if [ $result -ne 0 ]; then
-  cd "${CUR}"
-  exit $result
-fi
-echo ""
-pwd
-corepack use pnpm@latest && pnpm up && pnpm lint-fix && pnpm build
-result=$?
-if [ $result -ne 0 ]; then
-  cd "${CUR}"
-  exit $result
-fi
-git commit -am "Bumps node modules" && git push
-result=$?
-if [ $result -ne 0 ]; then
-  cd "${CUR}"
-  exit $result
+if ! (git pull --prune && git commit -am "Bumps node modules" && git push); then
+  cd "${CUR}" || exit
+  exit 1
 fi
 
-cd "${CUR}"
+cd "${CUR}" || exit
