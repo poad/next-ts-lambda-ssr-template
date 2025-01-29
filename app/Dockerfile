@@ -8,7 +8,7 @@ COPY . ./
 RUN bun run build
 
 # ベースイメージの変更
-FROM amazon/aws-lambda-nodejs:20
+FROM amazon/aws-lambda-nodejs:22
 
 # Lambda Web Adapterのインストール
 COPY --from=public.ecr.aws/awsguru/aws-lambda-adapter:0.8.3 /lambda-adapter /opt/extensions/lambda-adapter
