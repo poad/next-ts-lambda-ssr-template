@@ -6,7 +6,7 @@
     "lint-fix": "pnpm -r --if-present lint-fix"
   },
   "devDependencies": {
-    "@eslint/compat": "^1.2.5",
+    "@eslint/compat": "^1.2.6",
     "@eslint/eslintrc": "^3.2.0",
     "@stylistic/eslint-plugin": "^2.13.0",
     "@stylistic/eslint-plugin-js": "^2.13.0",
