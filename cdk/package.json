@@ -13,7 +13,7 @@
     "lint": "eslint './{bin,lib}/**/*.ts'"
   },
   "devDependencies": {
-    "@types/node": "^22.15.24",
+    "@types/node": "^22.15.26",
     "aws-cdk": "^2.1017.0",
     "esbuild": "^0.25.5",
     "ts-node": "^10.9.2",
