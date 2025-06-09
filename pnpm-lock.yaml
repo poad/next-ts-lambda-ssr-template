@@ -63,8 +63,8 @@ importers:
         specifier: ^5.2.0
         version: 5.2.0(eslint@9.28.0)
       pnpm:
-        specifier: ^10.11.1
-        version: 10.11.1
+        specifier: ^10.12.1
+        version: 10.12.1
       typescript-eslint:
         specifier: ^8.33.0
         version: 8.33.1(eslint@9.28.0)(typescript@5.8.3)
@@ -85,7 +85,7 @@ importers:
         specifier: ^15.3.3
         version: 15.3.3
       '@types/node':
-        specifier: ^22.15.29
+        specifier: ^22.15.30
         version: 22.15.30
       '@types/react':
         specifier: ^19.1.6
@@ -116,10 +116,10 @@ importers:
         version: 0.5.21
     devDependencies:
       '@types/node':
-        specifier: ^22.15.26
+        specifier: ^22.15.30
         version: 22.15.30
       aws-cdk:
-        specifier: ^2.1017.0
+        specifier: ^2.1018.0
         version: 2.1018.0
       esbuild:
         specifier: ^0.25.5
@@ -1902,8 +1902,8 @@ packages:
     resolution: {integrity: sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg==}
     engines: {node: '>=12'}
 
-  pnpm@10.11.1:
-    resolution: {integrity: sha512-5Rm592OYadyNXDxd/vc7PwkQlLCgBtcxc1PHKxJOgOGv1ClzLihwWta/oe6HnB/ORsEozOvTGSEB9D3WfGZ5Eg==}
+  pnpm@10.12.1:
+    resolution: {integrity: sha512-8N2oWA8O6UgcXHmh2Se5Fk8sR46QmSrSaLuyRlpzaYQ5HWMz0sMnkTV4soBK8zR0ylVLopwEqLEwYKcXZ1rjrA==}
     engines: {node: '>=18.12'}
     hasBin: true
 
@@ -4188,7 +4188,7 @@ snapshots:
 
   picomatch@4.0.2: {}
 
-  pnpm@10.11.1: {}
+  pnpm@10.12.1: {}
 
   possible-typed-array-names@1.1.0: {}
 
