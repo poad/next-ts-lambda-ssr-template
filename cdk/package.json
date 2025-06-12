@@ -13,8 +13,8 @@
     "lint": "eslint './{bin,lib}/**/*.ts'"
   },
   "devDependencies": {
-    "@types/node": "^24.0.0",
-    "aws-cdk": "^2.1018.0",
+    "@types/node": "^24.0.1",
+    "aws-cdk": "^2.1018.1",
     "esbuild": "^0.25.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
