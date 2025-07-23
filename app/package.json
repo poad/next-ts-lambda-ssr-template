@@ -11,13 +11,13 @@
     "lint-fix": "eslint --fix src"
   },
   "dependencies": {
-    "next": "^15.4.2",
+    "next": "^15.4.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^15.4.2",
-    "@types/node": "^24.0.15",
+    "@next/eslint-plugin-next": "^15.4.3",
+    "@types/node": "^24.1.0",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "eslint": "~9.31.0",
