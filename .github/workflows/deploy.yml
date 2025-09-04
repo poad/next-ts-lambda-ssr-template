@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Configure AWS Credentials
-      uses: aws-actions/configure-aws-credentials@v4
+      uses: aws-actions/configure-aws-credentials@v5
       with:
         role-to-assume: ${{ env.OIDC_IAM_ROLE_ARN }}
         role-session-name: GitHubActions
@@ -35,7 +35,7 @@ jobs:
       run: bun i && bun run build
 
     - name: Use Node.js 22.x
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v5
       with:
         node-version: 22.x
         check-latest: true
