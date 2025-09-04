@@ -39,6 +39,7 @@ jobs:
       with:
         node-version: 22.x
         check-latest: true
+        package-manager-cache: false
 
     - name: deploy (cdk)
       working-directory: cdk
