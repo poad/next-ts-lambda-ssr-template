@@ -23,5 +23,5 @@
     "pnpm": "^10.18.2",
     "typescript-eslint": "^8.46.0"
   },
-  "packageManager": "pnpm@10.17.1"
+  "packageManager": "pnpm@10.18.2"
 }
