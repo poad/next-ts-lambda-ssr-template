@@ -1,5 +1,6 @@
 // @ts-check
 
+import { defineConfig } from 'eslint/config';
 import eslint from '@eslint/js';
 import nextPlugin from '@next/eslint-plugin-next';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
@@ -12,7 +13,7 @@ import { FlatCompat } from '@eslint/eslintrc';
 
 const compat = new FlatCompat();
 
-export default tseslint.config(
+export default defineConfig(
   {
     ignores: [
       '**/*.d.ts',
@@ -31,25 +32,23 @@ export default tseslint.config(
   ...tseslint.configs.stylistic,
   {
     files: ['src/**/*.{jsx,tsx}'],
-    ...importPlugin.flatConfigs.recommended,
-    ...importPlugin.flatConfigs.typescript,
-    languageOptions: {
-      parser: tseslint.parser,
-      ecmaVersion: 'latest',
-      sourceType: 'module',
-    },
     plugins: {
       'jsx-a11y': jsxA11yPlugin,
       '@next/next': nextPlugin,
       '@stylistic': stylistic,
-      '@stylistic/ts': stylistic,
-      '@stylistic/jsx': stylistic,
     },
     extends: [
       // @ts-ignore
       ...compat.config(reactHooksPlugin.configs.recommended),
       ...compat.config(jsxA11yPlugin.configs.recommended),
+      importPlugin.flatConfigs.recommended,
+      importPlugin.flatConfigs.typescript,
     ],
+    languageOptions: {
+      parser: tseslint.parser,
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+    },
     settings: {
       react: {
         version: 'detect',
@@ -64,7 +63,6 @@ export default tseslint.config(
         node: true,
       },
     },
-    // @ts-ignore
     rules: {
       ...nextPlugin.configs.recommended.rules,
       ...nextPlugin.configs['core-web-vitals'].rules,
