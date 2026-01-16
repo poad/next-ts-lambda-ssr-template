@@ -77,8 +77,8 @@ importers:
         specifier: 16.1.2
         version: 16.1.2
       '@types/node':
-        specifier: ^25.0.8
-        version: 25.0.8
+        specifier: ^25.0.9
+        version: 25.0.9
       '@types/react':
         specifier: 19.2.2
         version: 19.2.2
@@ -98,8 +98,8 @@ importers:
   cdk:
     dependencies:
       aws-cdk-lib:
-        specifier: ^2.234.1
-        version: 2.234.1(constructs@10.4.4)
+        specifier: ^2.235.0
+        version: 2.235.0(constructs@10.4.4)
       constructs:
         specifier: ^10.4.4
         version: 10.4.4
@@ -108,25 +108,25 @@ importers:
         version: 0.5.21
     devDependencies:
       '@types/node':
-        specifier: ^25.0.8
-        version: 25.0.8
+        specifier: ^25.0.9
+        version: 25.0.9
       aws-cdk:
-        specifier: ^2.1100.3
-        version: 2.1100.3
+        specifier: ^2.1101.0
+        version: 2.1101.0
       esbuild:
         specifier: ^0.27.2
         version: 0.27.2
       ts-node:
         specifier: ^10.9.2
-        version: 10.9.2(@types/node@25.0.8)(typescript@5.9.3)
+        version: 10.9.2(@types/node@25.0.9)(typescript@5.9.3)
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
 
 packages:
 
-  '@aws-cdk/asset-awscli-v1@2.2.258':
-    resolution: {integrity: sha512-TL3I9cIue0bAsuwrmjgjAQaEH6JL09y49FVQMDhrz4jJ2iPKuHtdrYd7ydm02t1YZdPZE2M0VNj6VD4fGIFpvw==}
+  '@aws-cdk/asset-awscli-v1@2.2.261':
+    resolution: {integrity: sha512-XkKvgG/OxrEYtVTt2Q9gaD58Qn90fnX/dNczL4k6myeii7UgAGPmqh+I+1uKohCWGKIKd+4Gz2xWBL/tPi4YIA==}
 
   '@aws-cdk/asset-node-proxy-agent-v6@2.1.0':
     resolution: {integrity: sha512-7bY3J8GCVxLupn/kNmpPc5VJz8grx+4RKfnnJiO1LG+uxkZfANZG3RMHhE+qQxxwkyQ9/MfPtTpf748UhR425A==}
@@ -732,8 +732,8 @@ packages:
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
 
-  '@types/node@25.0.8':
-    resolution: {integrity: sha512-powIePYMmC3ibL0UJ2i2s0WIbq6cg6UyVFQxSCpaPxxzAaziRfimGivjdF943sSGV6RADVbk0Nvlm5P/FB44Zg==}
+  '@types/node@25.0.9':
+    resolution: {integrity: sha512-/rpCXHlCWeqClNBwUhDcusJxXYDjZTyE8v5oTO7WbL8eij2nKhUeU89/6xgjU7N4/Vh3He0BtyhJdQbDyhiXAw==}
 
   '@types/react-dom@19.2.2':
     resolution: {integrity: sha512-9KQPoO6mZCi7jcIStSnlOWn2nEF3mNmyr3rIAsGnAbQKYbRLyqmeSc39EVgtxXVia+LMT8j3knZLAZAh+xLmrw==}
@@ -971,8 +971,8 @@ packages:
     resolution: {integrity: sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==}
     engines: {node: '>= 0.4'}
 
-  aws-cdk-lib@2.234.1:
-    resolution: {integrity: sha512-2oNqAA1qjF9xHCom6yHuY8KE6UltK7pTg3egf/t1+C6/OFEaw9+jyhCWmTasGmvjyQSkbvKiCPZco0l+XVyxiQ==}
+  aws-cdk-lib@2.235.0:
+    resolution: {integrity: sha512-zoTa+fw4J0sjYrn4LJcWAKxQ8i9DMqWdLo7MkP6nNgtqEaypajF9t6Ucasx93/pAQ2bmGV61EM2oVEOtVnpenA==}
     engines: {node: '>= 18.0.0'}
     peerDependencies:
       constructs: ^10.0.0
@@ -989,8 +989,8 @@ packages:
       - yaml
       - mime-types
 
-  aws-cdk@2.1100.3:
-    resolution: {integrity: sha512-jeSamF+IwPJKhqMir7Cw+2IoeHsmNFc/SoDAlOS9BYM8Wrd0Q1jJd3GcJOFzsMcWv9mcBAP5o23amyKHu03dXA==}
+  aws-cdk@2.1101.0:
+    resolution: {integrity: sha512-5EP+t13OFzE0SaK+KY/di9ZcXQYwnhDtM8kqEMjEvqhj+K3eqtV0DDI1YjthOoVMBAHgZK9juKPqxfwwRprBPQ==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
 
@@ -2179,7 +2179,7 @@ packages:
 
 snapshots:
 
-  '@aws-cdk/asset-awscli-v1@2.2.258': {}
+  '@aws-cdk/asset-awscli-v1@2.2.261': {}
 
   '@aws-cdk/asset-node-proxy-agent-v6@2.1.0': {}
 
@@ -2684,7 +2684,7 @@ snapshots:
 
   '@types/json5@0.0.29': {}
 
-  '@types/node@25.0.8':
+  '@types/node@25.0.9':
     dependencies:
       undici-types: 7.16.0
 
@@ -2948,14 +2948,14 @@ snapshots:
     dependencies:
       possible-typed-array-names: 1.1.0
 
-  aws-cdk-lib@2.234.1(constructs@10.4.4):
+  aws-cdk-lib@2.235.0(constructs@10.4.4):
     dependencies:
-      '@aws-cdk/asset-awscli-v1': 2.2.258
+      '@aws-cdk/asset-awscli-v1': 2.2.261
       '@aws-cdk/asset-node-proxy-agent-v6': 2.1.0
       '@aws-cdk/cloud-assembly-schema': 48.20.0
       constructs: 10.4.4
 
-  aws-cdk@2.1100.3:
+  aws-cdk@2.1101.0:
     optionalDependencies:
       fsevents: 2.3.2
 
@@ -4283,14 +4283,14 @@ snapshots:
     dependencies:
       typescript: 5.9.3
 
-  ts-node@10.9.2(@types/node@25.0.8)(typescript@5.9.3):
+  ts-node@10.9.2(@types/node@25.0.9)(typescript@5.9.3):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.12
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 25.0.8
+      '@types/node': 25.0.9
       acorn: 8.15.0
       acorn-walk: 8.3.4
       arg: 4.1.3
