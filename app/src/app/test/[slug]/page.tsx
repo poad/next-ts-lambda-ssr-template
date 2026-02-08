@@ -1,5 +1,6 @@
 import { JSX } from 'react';
 import styles from '../../page.module.css';
+import Link from 'next/link';
 
 export default async function Index({
   params,
@@ -9,7 +10,7 @@ export default async function Index({
   const slug = (await params).slug;
   return (
     <main className={styles.main}>
-      <a href="/">HOME</a>
+      <Link href="/">HOME</Link>
       <h1>{slug}</h1>
     </main>
   );

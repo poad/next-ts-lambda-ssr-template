@@ -13,11 +13,22 @@
     "lint": "eslint './{bin,lib}/**/*.ts'"
   },
   "devDependencies": {
-    "@types/node": "^25.2.1",
+    "@eslint/compat": "^2.0.2",
+    "@eslint/js": "^9.39.2",
+    "@stylistic/eslint-plugin": "^5.7.1",
+    "@types/node": "^24.10.12",
     "aws-cdk": "^2.1105.0",
     "esbuild": "^0.27.3",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
+    "eslint": "^9.39.2",
+    "eslint-config-import": "^0.13.0",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-awscdk": "^4.1.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-promise": "^7.2.1",
+    "jiti": "^2.6.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.54.0"
   },
   "dependencies": {
     "aws-cdk-lib": "^2.237.1",
