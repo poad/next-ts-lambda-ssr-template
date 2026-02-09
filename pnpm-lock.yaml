@@ -39,16 +39,16 @@ importers:
         specifier: ^3.3.3
         version: 3.3.3
       '@eslint/js':
-        specifier: ^9.39.2
+        specifier: ^9
         version: 9.39.2
       '@next/eslint-plugin-next':
         specifier: ^16.1.6
         version: 16.1.6
       '@stylistic/eslint-plugin':
-        specifier: ^5.7.1
+        specifier: '>=5.0.0'
         version: 5.7.1(eslint@9.39.2(jiti@2.6.1))
       '@types/node':
-        specifier: ^24.10.12
+        specifier: ^24
         version: 24.10.12
       '@types/react':
         specifier: 19.2.2
@@ -60,7 +60,7 @@ importers:
         specifier: ^0.27.3
         version: 0.27.3
       eslint:
-        specifier: ^9.39.2
+        specifier: ^9
         version: 9.39.2(jiti@2.6.1)
       eslint-config-import:
         specifier: ^0.13.0
@@ -115,13 +115,13 @@ importers:
         specifier: ^2.0.2
         version: 2.0.2(eslint@9.39.2(jiti@2.6.1))
       '@eslint/js':
-        specifier: ^9.39.2
+        specifier: ^9
         version: 9.39.2
       '@stylistic/eslint-plugin':
-        specifier: ^5.7.1
+        specifier: '>=5.0.0'
         version: 5.7.1(eslint@9.39.2(jiti@2.6.1))
       '@types/node':
-        specifier: ^24.10.12
+        specifier: ^24
         version: 24.10.12
       aws-cdk:
         specifier: ^2.1105.0
@@ -130,7 +130,7 @@ importers:
         specifier: ^0.27.3
         version: 0.27.3
       eslint:
-        specifier: ^9.39.2
+        specifier: ^9
         version: 9.39.2(jiti@2.6.1)
       eslint-config-import:
         specifier: ^0.13.0
