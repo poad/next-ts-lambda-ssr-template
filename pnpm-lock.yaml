@@ -49,7 +49,7 @@ importers:
         version: 5.8.0(eslint@9.39.2(jiti@2.6.1))
       '@types/node':
         specifier: ^24
-        version: 24.10.12
+        version: 24.10.13
       '@types/react':
         specifier: 19.2.2
         version: 19.2.2
@@ -122,7 +122,7 @@ importers:
         version: 5.8.0(eslint@9.39.2(jiti@2.6.1))
       '@types/node':
         specifier: ^24
-        version: 24.10.12
+        version: 24.10.13
       aws-cdk:
         specifier: ^2.1105.0
         version: 2.1105.0
@@ -770,8 +770,8 @@ packages:
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
 
-  '@types/node@24.10.12':
-    resolution: {integrity: sha512-68e+T28EbdmLSTkPgs3+UacC6rzmqrcWFPQs1C8mwJhI/r5Uxr0yEuQotczNRROd1gq30NGxee+fo0rSIxpyAw==}
+  '@types/node@24.10.13':
+    resolution: {integrity: sha512-oH72nZRfDv9lADUBSo104Aq7gPHpQZc4BTx38r9xf9pg5LfP6EzSyH2n7qFmmxRQXh7YlUXODcYsg6PuTDSxGg==}
 
   '@types/react-dom@19.2.2':
     resolution: {integrity: sha512-9KQPoO6mZCi7jcIStSnlOWn2nEF3mNmyr3rIAsGnAbQKYbRLyqmeSc39EVgtxXVia+LMT8j3knZLAZAh+xLmrw==}
@@ -2689,7 +2689,7 @@ snapshots:
 
   '@types/json5@0.0.29': {}
 
-  '@types/node@24.10.12':
+  '@types/node@24.10.13':
     dependencies:
       undici-types: 7.16.0
 
