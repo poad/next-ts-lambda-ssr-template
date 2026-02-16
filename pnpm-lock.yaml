@@ -139,8 +139,8 @@ importers:
         specifier: ^4.4.4
         version: 4.4.4(eslint-plugin-import@2.32.0)(eslint@9.39.2(jiti@2.6.1))
       eslint-plugin-awscdk:
-        specifier: ^4.1.0
-        version: 4.1.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
+        specifier: ^4.2.0
+        version: 4.2.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
       eslint-plugin-import:
         specifier: ^2.32.0
         version: 2.32.0(eslint-import-resolver-typescript@4.4.4)(eslint@9.39.2(jiti@2.6.1))
@@ -1295,8 +1295,8 @@ packages:
       eslint-import-resolver-webpack:
         optional: true
 
-  eslint-plugin-awscdk@4.1.0:
-    resolution: {integrity: sha512-NgwKKPa5Yrf1oy9KWWGwzjN1B3NfBSEtMKyh08RwO5msGIbW6vkhyeTCCVZo4DrZWaupEf2uuPFdIWbdmeUU2w==}
+  eslint-plugin-awscdk@4.2.0:
+    resolution: {integrity: sha512-yj+Tz+Zof9eCRhOyfXcpbHfmBJ9gdkwenVI6yoUwqY8H/HzaH5nsRAFZFq484KvtbA9siuo+sb06d0WEOyt53A==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^9
@@ -3329,7 +3329,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-awscdk@4.1.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3):
+  eslint-plugin-awscdk@4.2.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3):
     dependencies:
       eslint: 9.39.2(jiti@2.6.1)
       typescript: 5.9.3
