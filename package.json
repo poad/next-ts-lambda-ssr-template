@@ -6,7 +6,7 @@
     "lint-fix": "pnpm -r --if-present lint-fix"
   },
   "devDependencies": {
-    "pnpm": "^10.30.0"
+    "pnpm": "^10.30.1"
   },
-  "packageManager": "pnpm@10.29.1"
+  "packageManager": "pnpm@10.30.1"
 }
