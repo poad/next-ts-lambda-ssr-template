@@ -5,5 +5,17 @@
     "lint": "pnpm -r --if-present lint",
     "lint-fix": "pnpm -r --if-present lint-fix"
   },
-  "packageManager": "pnpm@11.6.0"
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.9.0",
+      "onFail": "download"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "^24.18.0",
+      "onFail": "download"
+    }
+  },
+  "devDependencies": {}
 }

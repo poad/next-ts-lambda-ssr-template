@@ -1,18 +1,17 @@
-import { defineConfig, globalIgnores } from 'eslint/config';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { defineConfig, globalIgnores, includeIgnoreFile } from 'eslint/config';
 import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
-import react from 'eslint-plugin-react';
-import reactHooks from 'eslint-plugin-react-hooks';
-// @ts-expect-error ignore plugin type
+// @ts-expect-error ignore type errors
 import pluginPromise from 'eslint-plugin-promise';
 import nextVitals from 'eslint-config-next/core-web-vitals';
 import nextTs from 'eslint-config-next/typescript';
 import globals from 'globals';
 import { configs, parser } from 'typescript-eslint';
+import { importX, createNodeResolver } from 'eslint-plugin-import-x';
+import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
 
-import { includeIgnoreFile } from '@eslint/compat';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -41,21 +40,22 @@ export default defineConfig(
       './.next/*',
     ],
   },
-  eslint.configs.recommended,
-  ...configs.strict,
-  ...configs.stylistic,
   pluginPromise.configs['flat/recommended'],
-  reactHooks.configs.flat.recommended,
+  importX.flatConfigs.recommended,
+  importX.flatConfigs.typescript,
   {
     files: ['**/*.ts', '**/*.tsx'],
-    ...react.configs.flat.recommended,
-    ...react.configs.flat['jsx-runtime'],
     languageOptions: {
-      ...react.configs.flat.recommended.languageOptions,
       parser,
       globals: {
         ...globals.serviceworker,
         ...globals.browser,
+      },
+      parserOptions: {
+        projectService: {
+          allowDefaultProject: ['eslint.config.ts'],
+        },
+        tsconfigRootDir: __dirname,
       },
     },
     plugins: {
@@ -65,13 +65,41 @@ export default defineConfig(
       react: {
         version: '19.2',
       },
+      'import-x/resolver-next': [
+        createTypeScriptImportResolver({
+          alwaysTryTypes: true,
+        }),
+        createNodeResolver(),
+      ],
     },
+    extends: [
+      eslint.configs.recommended,
+      configs.strict,
+      configs.stylistic,
+    ],
     rules: {
       '@stylistic/semi': 'error',
       '@stylistic/indent': ['error', 2],
       '@stylistic/comma-dangle': ['error', 'always-multiline'],
       '@stylistic/arrow-parens': ['error', 'always'],
       '@stylistic/quotes': ['error', 'single'],
+
+      'import-x/order': [
+        'error',
+        {
+          'groups': [
+            // Imports of builtins are first
+            'builtin',
+            // Then sibling and parent imports. They can be mingled together
+            ['sibling', 'parent'],
+            // Then index file imports
+            'index',
+            // Then any arcane TypeScript imports
+            'object',
+            // Then the omitted imports: internal, external, type, unknown
+          ],
+        },
+      ],
     },
   },
 );
