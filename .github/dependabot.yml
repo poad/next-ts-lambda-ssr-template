@@ -8,7 +8,7 @@ updates:
       - dependency-type: all
     rebase-strategy: auto
     cooldown:
-      default-days: 3
+      default-days: 7
     assignees:
       - poad
     groups:
@@ -17,7 +17,10 @@ updates:
           - '*'
 
   - package-ecosystem: npm
-    directory: '/'
+    directories:
+      - '/'
+      - '/app/'
+      - '/cdk/'
     schedule:
       interval: daily
       timezone: Asia/Tokyo
@@ -26,39 +29,12 @@ updates:
     rebase-strategy: auto
     cooldown:
       default-days: 7
+    ignore:
+      - dependency-name: typescript
+        versions: ~7.0.0
     assignees:
       - poad
     groups:
-      miscs:
-        patterns:
-          - '*'
-
-  - package-ecosystem: npm
-    directory: '/app/'
-    schedule:
-      interval: daily
-      timezone: Asia/Tokyo
-    allow:
-      - dependency-type: all
-    rebase-strategy: auto
-    assignees:
-      - poad
-    groups:
-      app:
-        patterns:
-          - '*'
-
-  - package-ecosystem: npm
-    directory: '/cdk/'
-    schedule:
-      interval: daily
-      timezone: Asia/Tokyo
-    allow:
-      - dependency-type: all
-    rebase-strategy: auto
-    assignees:
-      - poad
-    groups:
-      cdk:
+      npm:
         patterns:
           - '*'
