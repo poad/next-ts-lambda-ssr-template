@@ -11,7 +11,7 @@
     "lint-fix": "eslint --fix src"
   },
   "dependencies": {
-    "next": "^16.2.12",
+    "next": "^16.3.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
@@ -34,6 +34,6 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "globals": "^17.9.0",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.65.0"
+    "typescript-eslint": "^8.66.0"
   }
 }
