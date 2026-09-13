@@ -1,9 +1,7 @@
 {
   "app": "pnx tsx bin/cdk.ts",
   "watch": {
-    "include": [
-      "**"
-    ],
+    "include": ["**"],
     "exclude": [
       "README.md",
       "cdk*.json",
@@ -20,6 +18,5 @@
   "requireApproval": "never",
   "versionReporting": false,
   "pathMetadata": false,
-  "context": {
-  }
+  "context": {}
 }

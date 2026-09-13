@@ -2,18 +2,19 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "lint": "pnpm -r --if-present lint",
-    "lint-fix": "pnpm -r --if-present lint-fix"
+    "lint": "pnpm -r --if-present --parallel lint",
+    "lint-fix": "pnpm -r --if-present --parallel lint-fix",
+    "build": "pnpm -r --if-present --parallel build"
   },
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "^11.20.0",
+      "version": "12.4.1",
       "onFail": "download"
     },
     "runtime": {
       "name": "node",
-      "version": "^24.19.0",
+      "version": "24.21.0",
       "onFail": "download"
     }
   },

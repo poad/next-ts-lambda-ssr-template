@@ -9,27 +9,21 @@
     "build": "tsc",
     "watch": "tsc -w",
     "cdk": "cdk",
-    "lint-fix": "eslint --fix './{bin,lib}/**/*.ts'",
-    "lint": "eslint './{bin,lib}/**/*.ts'"
-  },
-  "devDependencies": {
-    "@eslint/js": "^10.0.1",
-    "@stylistic/eslint-plugin": "^5.10.0",
-    "@types/node": "^26.4.1",
-    "aws-cdk": "^2.1139.0",
-    "esbuild": "^0.28.2",
-    "eslint": "^10.9.1",
-    "eslint-import-resolver-typescript": "^4.4.5",
-    "eslint-plugin-awscdk": "^4.4.1",
-    "eslint-plugin-import-x": "^4.17.1",
-    "eslint-plugin-promise": "^7.3.0",
-    "jiti": "^2.7.0",
-    "tsx": "^4.23.13",
-    "typescript": "^6.0.3",
-    "typescript-eslint": "^8.69.0"
+    "lint-fix": "oxfmt && oxlint --fix",
+    "lint": "oxfmt --check && oxlint"
   },
   "dependencies": {
     "aws-cdk-lib": "^2.268.0",
     "constructs": "^10.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.1",
+    "aws-cdk": "^2.1140.0",
+    "esbuild": "^0.28.2",
+    "oxfmt": "^0.66.0",
+    "oxlint": "^1.81.0",
+    "oxlint-plugin-awscdk": "^1.0.3",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
   }
 }

@@ -18,8 +18,16 @@ jobs:
       with:
         persist-credentials: false
 
-    - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
+    - name: Install pnpm
+      uses: pnpm/setup@703c52620218391530e48b9e8870d5c0082e1b9b # v2.1.0
+      with:
+        install: false
 
-    - name: Build (app)
-      working-directory: app
-      run: bun i && bun run build
+    - name: Install dependencies
+      run: pnpm install --no-frozen-lockfile
+
+    - name: Lint
+      run: pnpm lint
+
+    - name: Build
+      run: pnpm build

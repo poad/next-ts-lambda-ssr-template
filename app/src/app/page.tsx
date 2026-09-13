@@ -1,5 +1,6 @@
 import styles from './page.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -85,15 +86,13 @@ export default function Home() {
           <h2>
             Deploy <span>-&gt;</span>
           </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
+          <p>Instantly deploy your Next.js site to a shareable URL with Vercel.</p>
         </a>
 
-        <a href="./test/hoge" className={styles.card}>
+        <Link href="./test/hoge" className={styles.card}>
           <h2>Test</h2>
           <p>Dynamic Routing.</p>
-        </a>
+        </Link>
       </div>
     </main>
   );

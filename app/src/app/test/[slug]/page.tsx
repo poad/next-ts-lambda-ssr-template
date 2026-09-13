@@ -1,6 +1,6 @@
 import styles from '../../page.module.css';
-import { JSX } from 'react';
 import Link from 'next/link';
+import { JSX } from 'react';
 
 export default async function Index({
   params,
