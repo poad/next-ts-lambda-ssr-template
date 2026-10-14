@@ -28,6 +28,4 @@ overrides:
   postcss@<8.5.10: ^8.5.10
   semver: '>=7'
 
-  next: ^16.4.1
-
 trustPolicy: no-downgrade

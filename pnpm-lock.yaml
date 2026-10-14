@@ -167,7 +167,6 @@ overrides:
   brace-expansion@>=4.0.0 <5.0.9: ^5.0.9
   postcss@<8.5.10: ^8.5.10
   semver: '>=7'
-  next: ^16.4.1
 
 importers:
 
