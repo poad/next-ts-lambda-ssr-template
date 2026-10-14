@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "build:web": "next build && node scripts/package-web.mjs",
     "start": "next start",
     "lint": "oxfmt --check && oxlint",
     "lint-fix": "oxfmt && oxlint --fix"

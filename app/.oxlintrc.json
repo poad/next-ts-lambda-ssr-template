@@ -19,6 +19,7 @@
   },
   "ignorePatterns": [
     ".next/**",
+    ".web-package/**",
     "out/**",
     "build/**",
     "next-env.d.ts",

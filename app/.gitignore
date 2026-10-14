@@ -12,6 +12,9 @@
 /.next/
 /out/
 
+# Lambda Web Functions packaging output
+/.web-package/
+
 # production
 /build
 
