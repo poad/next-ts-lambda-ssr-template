@@ -1130,8 +1130,8 @@ packages:
     engines: {node: '>= 18.0.0'}
     hasBin: true
 
-  baseline-browser-mapping@2.11.31:
-    resolution: {integrity: sha512-b0k7wXlWjpuL/Uxb/pYlpjY0ej5BjAmurtPUk3eRGuloI4yjK32m8TiKUQ81l1ptcLjKS/KH2+uqIolZti1x4Q==}
+  baseline-browser-mapping@2.11.33:
+    resolution: {integrity: sha512-yiVKDX+qCMRKBE084lXvq9EcwFUhKZ2nU8TK1EQQuOgPNR/lmbGxXOeDdlGUqC2Zz11Cs9rk1d/8NfgBmlkt0w==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -1917,7 +1917,7 @@ snapshots:
 
   aws-cdk@2.1146.1: {}
 
-  baseline-browser-mapping@2.11.31: {}
+  baseline-browser-mapping@2.11.33: {}
 
   caniuse-lite@1.0.30001819: {}
 
@@ -1976,7 +1976,7 @@ snapshots:
     dependencies:
       '@next/env': 16.4.3
       '@swc/helpers': 0.5.23
-      baseline-browser-mapping: 2.11.31
+      baseline-browser-mapping: 2.11.33
       caniuse-lite: 1.0.30001819
       postcss: 8.5.23
       react: 19.3.1
