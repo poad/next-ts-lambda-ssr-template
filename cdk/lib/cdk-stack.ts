@@ -110,7 +110,7 @@ export class CdkStack extends cdk.Stack {
           },
           RuntimeConfig: {
             // Web Functions は Node.js のみ、Arm64 固定
-            Runtime: 'nodejs24.x',
+            Runtime: 'nodejs26.x',
           },
         },
         ServiceConfig: {
