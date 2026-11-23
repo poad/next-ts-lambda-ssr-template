@@ -10,19 +10,8 @@ allowBuilds:
 minimumReleaseAge: 10080 # 7 days in minutes
 
 minimumReleaseAgeExclude:
-  - pnpm@12.21.0
+  - pnpm@12.23.0
   
-  - next@16.4.6
-  - '@next/env@16.4.6'
-  - '@next/swc-darwin-arm64@16.4.6'
-  - '@next/swc-darwin-x64@16.4.6'
-  - '@next/swc-linux-arm64-gnu@16.4.6'
-  - '@next/swc-linux-arm64-musl@16.4.6'
-  - '@next/swc-linux-x64-gnu@16.4.6'
-  - '@next/swc-linux-x64-musl@16.4.6'
-  - '@next/swc-win32-arm64-msvc@16.4.6'
-  - '@next/swc-win32-x64-msvc@16.4.6'
-
 overrides:
   semver: '>=7'
 
