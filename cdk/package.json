@@ -20,8 +20,8 @@
     "@types/node": "^26.6.6",
     "aws-cdk": "^2.1148.1",
     "esbuild": "^0.28.2",
-    "oxfmt": "^0.78.0",
-    "oxlint": "^1.93.0",
+    "oxfmt": "^0.79.0",
+    "oxlint": "^1.94.0",
     "oxlint-plugin-awscdk": "^1.0.4",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2"
